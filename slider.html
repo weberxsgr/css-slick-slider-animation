@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .brands-list {
+            overflow: hidden;
+        }
+
+        .wrapper {
+            display: grid;
+            grid-auto-flow: column;
+            grid-auto-columns: 15rem;
+            justify-items: stretch;
+            animation: scroll 20s linear infinite; /* Adjusted animation duration to slow it down */
+            gap: 40px;
+            margin-left: 10px; /* Added to reset margin for smoother animation */
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0); /* Start from initial position */
+            }
+            100% {
+                transform: translateX(calc(-100% - 40px)); /* End at the last image */
+            }
+        }
+
+        /* Pause animation on hover */
+        /* .wrapper:hover {
+            animation-play-state: paused;
+        } */
+
+        /* Optional: If you want to show scrollbar always */
+        .brands-list {
+            overflow-x: scroll;
+            scrollbar-width: thin;
+        }
+
+        /* Optional: Style scrollbar */
+        .brands-list::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        .brands-list::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        .brands-list::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="brands-list">
+        <div class="wrapper">
+            <img class="img-fluid"
+                src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-sunset-surrounded-by-grass_181624-22807.jpg?t=st=1709204854~exp=1709208454~hmac=2c7373ae10dc3b0d1c712a582c1598f7c57a01878367f4150ce6a3d352774c12&w=996"
+                alt="">
+            <img class="img-fluid"
+                src="https://img.freepik.com/free-photo/cascade-boat-clean-china-natural-rural_1417-1356.jpg?t=st=1709204887~exp=1709208487~hmac=7bb328c270787d08fc6170fa566ad05094a8a4fa1cced58ef30d026f5c121eae&w=996"
+                alt="">
+            <img class="img-fluid"
+                src="https://img.freepik.com/free-photo/beautiful-shot-small-lake-with-wooden-rowboat-focus-breathtaking-clouds-sky_181624-2490.jpg?t=st=1709204899~exp=1709208499~hmac=164ee0cf7e22e016761b9b8a662ab372fec283169589295dbc8ee62fd6a1cc4a&w=996"
+                alt="">
+            <img class="img-fluid"
+                src="https://img.freepik.com/free-photo/beautiful-view-greenery-bridge-forest-perfect-background_181624-17827.jpg?t=st=1709204913~exp=1709208513~hmac=73ca550fd33c0f3760ec7ce81477503d9f4224463a622c415fce8893809abbbb&w=996"
+                alt="">
+            <img class="img-fluid"
+                src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-sunset-surrounded-by-grass_181624-22807.jpg?t=st=1709204854~exp=1709208454~hmac=2c7373ae10dc3b0d1c712a582c1598f7c57a01878367f4150ce6a3d352774c12&w=996"
+                alt="">
+            <img class="img-fluid"
+                src="https://img.freepik.com/free-photo/cascade-boat-clean-china-natural-rural_1417-1356.jpg?t=st=1709204887~exp=1709208487~hmac=7bb328c270787d08fc6170fa566ad05094a8a4fa1cced58ef30d026f5c121eae&w=996"
+                alt="">
+            <img class="img-fluid"
+                src="https://img.freepik.com/free-photo/beautiful-shot-small-lake-with-wooden-rowboat-focus-breathtaking-clouds-sky_181624-2490.jpg?t=st=1709204899~exp=1709208499~hmac=164ee0cf7e22e016761b9b8a662ab372fec283169589295dbc8ee62fd6a1cc4a&w=996"
+                alt="">
+            <img class="img-fluid"
+                src="https://img.freepik.com/free-photo/beautiful-view-greenery-bridge-forest-perfect-background_181624-17827.jpg?t=st=1709204913~exp=1709208513~hmac=73ca550fd33c0f3760ec7ce81477503d9f4224463a622c415fce8893809abbbb&w=996"
+                alt="">
+        </div>
+    </div>
+</body>
+
+</html>
